@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech</title>    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/images/icon.png">
+</head>
+<body>
+
+    <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-zinc-900 py-10">
+
+        <!-- Logo -->
+        <div class="w-full text-center mb-6">
+            <img src="./assets/images/logo1.png" alt="Fintech" class="w-48 mx-auto">
+        </div>
+
+        <!-- Componente Login -->
+        <div class="flex shadow-md">
+
+        <!-- Formulário de Login -->
+            <div class="flex flex-wrap content-center justify-center rounded-l-md bg-green-700" style="width: 23rem; height: 28rem;">
+                <div class="w-72">
+
+                <!-- Heading -->
+                    <h1 class="text-center text-3xl text-lime-100 font-bold">Login</h1>
+
+                    <!-- Formulário -->
+                    <form class="mt-4">
+                        <div class="mb-3">
+                            <label class="mb-2 block text-s font-semibold text-zinc-900">E-mail</label>
+                            <input type="email" placeholder="Insira seu e-mail" class="block w-full rounded-md border border-gray-300 focus:border-lime-400 focus:outline-none focus:ring-1 focus:ring-lime-400 py-1 px-1.5 text-gray-500" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="mb-2 block text-s font-semibold text-zinc-900">Senha</label>
+                            <input type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-lime-400 focus:outline-none focus:ring-1 focus:ring-lime-400 py-1 px-1.5 text-gray-500" />
+                        </div>
+
+                        <div class="mb-3 flex flex-wrap content-center">
+                            <input id="remember" type="checkbox" class="mr-1 checked:bg-lime-400" /> <label for="remember" class="mr-auto text-xs font-semibold">Lembre de mim</label>
+                            <a href="#" class="text-xs font-semibold text-lime-400">Esqueci minha senha</a>
+                        </div>
+
+                        <div class="mb-3">
+                            <button class="mb-1.5 block w-full text-center text-lime-100 hover:text-zinc-900 bg-zinc-900 hover:bg-lime-400 px-2 py-1.5 rounded-md">Entrar</button>
+                            <button class="flex flex-wrap justify-center w-full text-lime-100 hover:text-zinc-900 bg-zinc-900 hover:bg-lime-400 px-2 py-1.5 rounded-md">
+                                <img class="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA">
+                                Entrar com Google
+                            </button>
+                        </div>
+                    </form>
+
+                        <!-- Footer -->
+                        <div class="text-center">
+                            <span class="text-xs text-zinc-900 font-semibold">Não tem uma conta?</span>
+                            <a href="#" class="text-xs font-semibold text-lime-400">Cadastre-se</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

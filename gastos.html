@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/images/icon.png">
+</head>
+<body class="bg-zinc-900">
+
+    <div class="container mx-auto px-4 py-8">
+
+        <!-- Logo -->
+        <div class="text-left mb-6">
+            <img src="./assets/images/logo2.png" alt="Logo da Empresa" class="w-40">
+        </div>
+
+        <!-- Título da página -->
+        <h1 class="text-3xl font-bold text-lime-100 mb-4">Gastos</h1>
+
+        <!-- Formulário de adição de gastos -->
+        <div class="bg-green-700 rounded-md p-4 mb-4">
+            <h2 class="text-lg font-semibold text-lime-100 mb-2">Adicionar Gasto</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="nome" class="block text-sm font-semibold text-zinc-900">Nome</label>
+                    <input id="nome" type="text" class="w-full rounded-md border border-gray-300 focus:border-lime-400 focus:outline-none focus:ring-1 focus:ring-lime-400 py-1 px-2 text-gray-500">
+                </div>
+                <div class="mb-4">
+                    <label for="descricao" class="block text-sm font-semibold text-zinc-900">Descrição</label>
+                    <textarea id="descricao" class="w-full rounded-md border border-gray-300 focus:border-lime-400 focus:outline-none focus:ring-1 focus:ring-lime-400 py-1 px-2 text-gray-500"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="tipo" class="block text-sm font-semibold text-zinc-900">Tipo do Gasto</label>
+                    <select id="tipo" class="w-full rounded-md border border-gray-300 focus:border-lime-400 focus:outline-none focus:ring-1 focus:ring-lime-400 py-1 px-2 text-gray-500">
+                        <option value="fixo">Fixo</option>
+                        <option value="variavel">Variável</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="valor" class="block text-sm font-semibold text-zinc-900">Valor</label>
+                    <input id="valor" type="text" class="w-full rounded-md border border-gray-300 focus:border-lime-400 focus:outline-none focus:ring-1 focus:ring-lime-400 py-1 px-2 text-gray-500">
+                </div>
+                <button type="submit" class="text-lime-100 bg-zinc-900 hover:bg-lime-400 py-2 px-4 rounded-md">Adicionar</button>
+            </form>
+        </div>
+
+        <!-- Lista de gastos -->
+        <div class="bg-green-700 rounded-md p-4 mb-4">
+            <h2 class="text-lg font-semibold text-lime-100 mb-2">Lista de Gastos</h2>
+            <ul>
+                <li class="text-lime-100 mb-2 hover:bg-green-600 py-2 px-4 rounded-md">
+                    <div class="flex justify-between">
+                        <div>
+                            <span class="font-semibold">Gasto 1</span>
+                            <span> - R$ 50,00</span>
+                        </div>
+                        <div>
+                            <span>Fixo</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="text-lime-100 mb-2 hover:bg-green-600 py-2 px-4 rounded-md">
+                    <div class="flex justify-between">
+                        <div>
+                            <span class="font-semibold">Gasto 2</span>
+                            <span> - R$ 30,00</span>
+                        </div>
+                        <div>
+                            <span>Variável</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="text-lime-100 mb-2 hover:bg-green-600 py-2 px-4 rounded-md">
+                    <div class="flex justify-between">
+                        <div>
+                            <span class="font-semibold">Gasto 3</span>
+                            <span> - R$ 20,00</span>
+                        </div>
+                        <div>
+                            <span>Fixo</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+</body>
+</html>
